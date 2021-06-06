@@ -1,0 +1,187 @@
+
+/* !!!!!!!!!!!!!!!!!!!!!IMPORTANT!!!!!!!!!!!!!!!!!!!!!!! */
+/* ALL COLUMNS ARE ROWS  */
+/* ALL ROWS ARE COLUMNS */
+/* KEEP IT IN MIND */
+/* !!!!!!!!!!!!!!!!!!!!!IMPORTANT!!!!!!!!!!!!!!!!!!!!!!! */
+
+
+*{
+    box-sizing: border-box;
+    text-align: center;
+    transition: 500ms;
+    color:white;
+    text-decoration: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+/* --- HEADER BLOCK --- */
+header{
+    background-color: rgba(0, 0, 0,0.5);
+}
+.header{
+    width: 90%;
+    margin: 0 auto;
+    gap: 40%;
+}
+.grid-xy{
+    display: grid;
+    grid-template-columns: 30% 30%;
+}
+.flx-bw-xy{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.flx-cntr-xy{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header__left-side{
+    display: grid;
+    grid-template-columns: 100px 170px;
+    font-size: 30px;
+    gap: 10px;
+    align-self: center;
+}
+.mobile__icon-on,.mobile__icon-off{
+    display: none;
+    padding: 20px;
+}
+li{
+    padding: 20px;
+}
+li:hover{
+    background-color: crimson;
+}
+li:active{
+    background-color: blueviolet;
+}
+
+/* --- IMG BLOCK --- */
+    .item1{
+        background: url(https://fdn.gsmarena.com/imgroot/news/19/12/phones-of-the-decade/-727w2/gsmarena_001.jpg) no-repeat center;
+        background-size: cover;
+    }
+    .item2{
+        background: url(https://images.anandtech.com/doci/9770/X-T30_DSF2310_678x452.jpg) no-repeat center;
+        background-size: cover;
+    }
+    .item3{
+        background: url(https://fdn.gsmarena.com/imgroot/news/19/12/top-phones-of-2019/-727/gsmarena_001.jpg) no-repeat center;
+        background-size: cover;
+    }
+    .item4{
+        background: url(https://images-na.ssl-images-amazon.com/images/I/71lcGPmAn6L._AC_SX522_.jpg) no-repeat center;
+        background-size: cover;
+    }
+        .item5{
+            background: url(https://images.techhive.com/images/article/2015/11/old_nokia_phones-100625503-large.jpg) no-repeat center;
+            background-size: cover;
+        }
+        .item6{
+            background: url(https://i.ebayimg.com/images/g/NYQAAOSwP8leTr2T/s-l300.jpg) no-repeat center;
+            background-size: cover;
+        }
+        .item7{
+            background: url(https://www.treehugger.com/thmb/hlakLBQjhdEyCthPyzWDwj_8STQ=/735x0/__opt__aboutcom__coeus__resources__content_migration__treehugger__images__2014__05__old_school_cell_phones-386c33e906934455a79237b0445e5090.jpg) no-repeat center;
+            background-size: cover;
+        }
+        .item8{
+            background: url(http://www.momentumplatform.com/high-tech-recycling/wp-content/uploads/sites/124/2020/03/AdobeStock_293835337_Editorial_Use_Only-1024x678.jpeg) no-repeat center;
+            background-size: cover;
+        }
+            .item9{
+                background: url(https://i.ytimg.com/vi/sbh_LAfuipc/hqdefault.jpg) no-repeat center;
+                background-size: cover;
+            }
+            .item10{
+                background: url(https://i.ytimg.com/vi/xMQDn0g10ps/maxresdefault.jpg) no-repeat center;
+                background-size: cover;
+            }
+            .item11{
+                background: url(https://i.pinimg.com/originals/89/ca/0e/89ca0e0d541a971ba384619dcdc95f78.jpg) no-repeat center;
+                background-size: cover;
+            }
+            .item12{
+                background: url(https://www.techrepublic.com/a/hub/i/2014/08/20/ae2804a2-cc16-4a83-a839-8bcee7157d84/screen-shot-2014-08-20-at-11-27-05-am.png) no-repeat center;
+                background-size: cover;
+            }
+                .item13{
+                    background: url(https://img.dtcn.com/image/digitaltrends/next_g2-1200x630-c-ar1.91.jpg) no-repeat center;
+                    background-size: cover;
+                }
+                .item14{
+                    background: url(https://obejorblog.com/wp-content/uploads/2020/03/flexible_smartphone-2.jpg) no-repeat center;
+                    background-size: cover;
+                }
+                .item15{
+                    background: url(https://www.businessinsider.in/photo/71577761/five-key-features-to-expect-in-future-smartphones.jpg?imgsize=102445) no-repeat center;
+                    background-size: cover;
+                }
+                .item16{
+                    background: url(https://cdn.mos.cms.futurecdn.net/X8ajP3firD9QzBCipfEtPk.jpg) no-repeat center;
+                    background-size: cover;
+                }
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+}
+.item:hover{
+    transform: scale(1.1);
+
+}
+.column5{
+    margin: 0 auto;
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);    
+}
+.crimson{
+    background-color: crimson;
+}
+.column__img{
+    width: 25%;
+    
+}
+.blur{
+    background: rgba(0, 0, 0, .7);
+}
+.blur:hover{
+    background: linear-gradient(rgba(0, 0, 0, .9), rgba(90, 17, 17, 0.6));
+}
+.item h3, .item p{
+    padding: 5vh;
+}
+.item p{
+    visibility: hidden;
+}
+.item:hover p{
+    visibility: visible;
+    transform: rotate(5deg);
+}
+.item:hover h3{
+    text-decoration: overline;
+    
+}
+.column__link{
+    padding: 5vh;
+}
+/* --- FOOTER BLOCK --- */
+footer{
+    background-color: tomato;
+}
+footer p{
+    font-size: 20px;
+    padding: 10vh;
+}

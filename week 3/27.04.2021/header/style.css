@@ -1,0 +1,38 @@
+/* Standard layoout */
+.box{
+    width: 200px;
+    height: 200px;
+    border: 1px solid;
+    background-color: violet;
+}
+
+/* Breakpoint 1 */
+@media screen and (min-width: 769px){
+    .box:nth-child(1){
+        width: 100px;
+        height: 200px;
+        background-color: yellow;
+    }
+    .box:nth-child(2){
+        width: 400px;
+        height: 200px;
+        background-color: salmon;
+    }
+}
+
+/* Breakpoint 2 */
+@media screen and (min-width: 1024px){
+    .box{
+        display:inline-block;
+        
+    } /*
+    .box:nth-child(1){
+        margin-left: calc(50% - 104px);
+    }
+    .box:nth-child(2){
+        margin-right: calc(50% - 404px);
+    } */
+    body{
+        text-align: center;
+    }
+}

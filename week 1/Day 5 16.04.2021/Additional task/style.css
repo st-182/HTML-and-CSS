@@ -1,0 +1,87 @@
+.phone{
+    width: 250px;
+    height: 500px;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 0px 3px 5px slategrey;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: meta ;
+/* display: inline; */
+
+}
+.blackberry{
+    width: 240px;
+    height: 20px;
+    /* border: 1px solid black; */
+    background: url(https://cdn.freebiesupply.com/logos/thumbs/2x/blackberry-logo.png) no-repeat center/60%;
+    /* backdrop-filter: blur(50px); */
+    filter: grayscale(100%);
+    position: absolute;
+    top: 0.5%;
+}
+.screen{
+    width: 240px;
+    height: 450px;
+    border: 1px solid black;
+    border-radius: 10px;
+    /* box-shadow: 0px 3px 5px slategrey; */
+    position: relative;
+    /* top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+}
+
+.button-section{
+    width: 240px;
+    height: 200px;
+    border: 1px solid black;
+    position: absolute  ;
+    border-radius: 10px;
+    transition: 500ms;
+    top: 299px;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* flex-wrap: nowrap; */
+}
+.button-section:hover{
+    width: 240px;
+    height: 200px;
+    border: 1px solid black;
+    position: absolute  ;
+    border-radius: 10px;
+    padding-top: 80px;
+    transition: 500ms;
+}
+.button-section:active{
+background-color: silver;
+}
+.button-line{
+    /* width: 240px; */
+    height: 20px;
+    border: 1px solid black;
+    top: 60%;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.button{
+    height: 15px;
+    width: 15px;
+    border: 1px solid black;
+    display: inline-block;
+}
+footer{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%);
+}

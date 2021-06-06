@@ -1,0 +1,518 @@
+.section1{
+    display: flex;
+    justify-content: space-between;
+    height: 400px;
+}
+.a30{
+    width:29%;
+}
+.a70{
+    width:70%;
+}
+img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+
+}
+section{
+    margin: 1%;
+}
+.orange{
+    background: rgba(245, 159, 0, 0.7);
+    text-align: center;
+
+}
+.relative{
+    padding: 3%;
+    position: relative;
+    bottom: 50%;
+    transform: translate(0%, -50%);
+    /* z-index: 1; */
+    background: rgba(163, 163, 163, 0.5);
+    border-radius: 20px;
+}
+a{
+    text-transform: uppercase;
+    padding: 10px 10px;
+    border: 1px solid white;
+    border-radius: 50px;
+    text-decoration: none;
+}
+.line{
+    width: 70px;
+    height: 3px;
+    background: rgba(245, 159, 0, 0.7);
+}
+h1{
+    font-weight: 100;
+    font-size: 50px;
+    width: 400px;
+    margin: 20px 0 40px;
+}
+p, h1, h2, h3, h4, h5, h6, a{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    
+}
+.circle{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: white;
+    text-align: center;
+}
+.circle p{
+    letter-spacing: -10px;
+    padding-right: 10px;
+    font-size: 70px;
+    font-weight: 900;
+    /* transform: translate(50%, 50%); */
+    margin: 10px 0;
+    color: rgb(240, 177, 61); 
+}
+*{
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.m-auto{
+    margin: 15px auto;
+}
+.orange h2{
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 40px;
+}
+.orange h5{
+    text-transform: uppercase;
+    font-weight: 400;
+}
+p.m-auto{
+    font-size: 12px;
+    padding: 0px 20px;
+}
+.w-line{
+    width: 350px;
+    height: 3px;
+    background-color: white;
+    margin: 0 auto;
+}
+.padding{
+padding: 5%;
+}
+.icons{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    padding: 0 30%;
+}
+.section2{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    height: 400px;
+}
+.pink{
+    background-color: rgb(187, 74, 93);
+}
+.grey{
+    background-color: rgb(236, 236, 236);
+}
+.center{
+    text-align: center;
+
+}
+.center h3{
+    text-transform: uppercase;
+
+}
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.circle2{
+    margin: 0 auto;
+    padding: 1px;
+    border: 1px solid white;
+    background: transparent;
+    color: white;
+}
+.circle2 i{
+    padding-top: 25%;
+    font-size: 50px;
+    font-weight: 100;
+    /* transform: translate(-50%, 0%); */
+}
+.box-right{
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+.box{
+    height: 300px;
+    width: 50%;
+}
+.box-right img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+}
+.box-left{
+    box-sizing: border-box;
+    width: 50%;
+}
+.box-left p{
+    font-size: 10px;
+    color: rgb(97, 97, 97);
+}
+.box-left h2, .box-left h3{
+    /* font-size: 10px; */
+    color: rgb(97, 97, 97);
+    font-weight: 100;
+    margin: 10px 0;
+}
+.box-left h3{
+    color: rgb(187, 74, 93);
+    font-weight: 500;
+}
+.inside{
+padding: 3%;
+}
+/* PLUS BEFORE LI */
+ul {
+    list-style: none;
+    margin-bottom: 40px;
+}
+li{
+    font-size: 10px;
+    color: rgba(97, 97, 97, 0.5);
+    margin: 10px;
+    font-style: italic;
+}
+.inside a{
+    background: rgb(187, 74, 93);
+    border: none;
+}
+
+/* --- SECTION #3 --- */
+.section3{
+    background: url(https://wallpapercave.com/wp/wp2150006.png) no-repeat center;
+    background-color:  rgba(255, 255, 255, 0.7);
+    background-size: cover;
+    padding-bottom: 5%;
+}
+.filter{
+    /* margin: 0 auto; */
+    text-align: center;
+}
+.filter-box{
+    display: inline-block;
+    box-sizing: border-box;
+    width: 175px;
+    height: 50px;
+    background: white;
+    margin: 10px 0px;
+    padding-top: 17px;
+}
+.filter-box a{
+    text-transform: uppercase;
+    color: black;
+    padding: 0;
+    border: none;
+    margin-top: 50%;
+}
+.yellow a{
+    color: rgb(184, 166, 0);
+}
+.table{
+    background-color: white;
+    width: 80%;
+    margin: 0 auto;
+    
+}
+.row{
+    
+    background-color: rgb(231, 231, 231);
+    /* width: 80%; */
+    text-align: center;
+    margin: 0 auto 5px auto;
+}
+.row:last-child{
+    margin:0 auto;
+}
+.date{
+    margin: 10px;
+    background-color: orange;
+    height: 60px;
+    width: 60px;
+}
+.date p{
+    /* word-wrap: break-word; */
+    margin: 13px;
+    text-transform: uppercase;
+}
+.flex-between{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.name{
+    text-align: left;
+}
+.name h3{
+    color: black;
+}
+.time p{
+    color: rgb(92, 92, 92);
+}
+.name p{
+    color: rgb(141, 0, 0);
+}
+.button{
+    margin-right: 10px;
+}
+.button a{
+    color: black;
+    background-color: white;
+}
+.raw2{
+    background-color: rgb(201, 201, 201);
+}
+/* --- SECTION #4 --- */
+.section4{
+    display: flex;
+    justify-content: space-between;
+    height: 400px;
+}
+.flex-column{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.director img{
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-top: 15px;
+}
+.director-name{
+    text-align: center;
+}
+.quote{
+    text-align: center;
+    height: 100px;
+    padding: 0 5%;
+}
+.round{
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: rgb(104, 104, 104);
+    margin: 20px;
+}
+.round:last-child{
+    background-color: black;
+}
+.director-name p {
+color: brown;
+}
+.director-name h3 {
+    color: black;
+    }
+.quote p {
+    color: rgb(153, 153, 153);
+}
+.grey4{
+    background-color: rgba(236, 236, 236,0.6);
+    height: 100%;
+}
+.img4{
+background: url(https://www.pngkey.com/png/detail/194-1942943_thumb-up-man-png.png) no-repeat ;
+background-size: cover left;
+/* transform: scaleX(-1); */
+}
+/* --- KARUSELE --- */
+#overflow{
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+}
+.slide1{
+position: relative;
+}
+.slide2{
+position: relative;
+}
+.inner{
+    height: 100%;
+}
+/* --- Section 5 --- */
+.section5{
+    display: flex;
+    justify-content: space-between;
+    height: 300px;
+}
+.card{
+    font-size: 100px;
+    color: rgb(255, 255, 255);
+    width: 25%;
+    height: 100%;
+    text-align: center;
+    transition: 500ms;
+    perspective: 1000px;
+}
+.card-inner{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.card h2{
+color: white;
+font-size: 16px;
+}
+.card i{
+    margin-top: 30%;
+}
+.card1{
+    background: aqua;
+}
+.card2{
+    background: blueviolet;
+}
+.card3{
+    background: crimson;
+}
+.card4{
+    background: darkorange;
+}
+
+
+
+
+.card:hover .card-inner{
+
+    transform: rotateY(180deg);
+}
+.front, .back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+.front{
+    /* background-color: #bbb; */
+    /* color: black; */
+}
+.back{
+    /* background-color: #2980b9; */
+    color: white;
+    transform: rotateY(180deg);
+}
+.back p{
+    margin-top: 50%;
+    font-size: 12px;
+}
+/* --- Section 6 --- */
+.section6{
+    display: flex;
+    justify-content: space-between;
+    height: 400px;
+}
+.fishing{
+    background: url(https://fishuntamed.com/wp-content/uploads/2018/04/DSC_0872.jpg) no-repeat bottom;
+    background-size: cover;
+}
+.black-lable{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.black-lable input, .black-lable textarea{
+    background: rgba(255, 255, 255, 0.3);
+    border: none;
+    border-bottom: 1px solid white;
+    color: white;
+    /* text-decoration: none; */
+    outline: none;
+    padding: 5px 20px;
+}
+.black-lable input[type=text]:focus, textarea[type=text]:focus {
+    background-color: rgba(71, 111, 114, 0.8);
+}
+
+.black-lable ::placeholder{
+    color: rgba(255, 255, 255, 0.8);
+}
+.black-lable input[type=button]{
+    text-transform: uppercase;
+    padding: 10px 10px;
+    background-color: rgba(245, 159, 0);
+    border: 1px solid white;
+    border-radius: 50px;
+    text-decoration: none;
+    outline: white;
+    cursor: pointer;
+}
+.margin{
+    margin: 7%;
+}
+.margin1{
+    margin: 3% 0;
+}
+.margin1 textarea{
+    width: 100%;
+    height: 150px;
+}
+.margin1 input{
+    margin: 3% 0;
+}
+.a100a{
+    width: 100%;
+    height: 100%;
+}
+.a100{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    bottom: 100%;
+    padding-top: 25%;
+}
+.icon100{
+    height: 100px;
+    width: 100px;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+.icon100 i{
+    font-size: 50px;
+    padding-top: 20%;
+}
+.a30:hover .a100{
+    display: none;
+}
+.a100 i{
+    color: white;
+}
+.a100 h3{
+    color: white;
+    font-size: 25px;
+}
+
+footer{
+    text-align: center;
+    background-color: rgba(1, 129, 129, 0.7);
+    padding: 30px;
+}
+footer span{
+    color: rgb(168, 0, 0);
+}

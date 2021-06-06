@@ -1,0 +1,9 @@
+.header{
+    background: url(../20.04.2021/layout.jpg) no-repeat center;
+    background-size: 40%;
+    border-radius: 50%;
+    height: 100vh;
+}
+h1{
+    margin: 0;
+}

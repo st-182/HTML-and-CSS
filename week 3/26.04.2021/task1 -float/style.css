@@ -1,0 +1,92 @@
+.info{
+    width: 800px;
+    text-align: center;
+    border-style: dashed;
+}
+.info p{
+    border-style: solid;
+
+}
+img{
+    float: right;
+    width: 300px;
+    height: 400px;
+}
+.div:nth-child(1n){
+    float: left;
+    background-color: aqua;
+}
+.div:nth-child(2n){
+    float: right;
+    }
+
+    .x300{
+        width: 90vw;
+        height: 30vh;
+    }
+    .y200{
+        width: 30vw;
+        height: 60vh;
+        float: right;
+    }
+    .x200{
+        width: 60vw;
+        height: 30vh;
+        float: left;
+    }
+.a{
+ background-color: aqua;
+}
+.first{
+    margin: 5rem auto;
+    width: calc(300px + 2rem) ;
+    height: calc(300px + 2rem);
+}
+.rect{
+    background: rgb(0, 170, 51);
+    /* border-style: dotted; */
+}
+.rect-square{
+    width: 100px;
+    height: 100px;
+    /* margin-top: 5px;
+    margin-left: 7px; */
+}
+.rect-v{
+    width: 100px;
+    height: calc(200px + 1rem);
+}
+.rect-h{
+    height: 100px;
+    width: calc(200px + 1rem);
+}
+.float-left{
+    float: left;
+}
+.float-right{
+    float: right;
+}
+.mb-1{
+    margin-bottom: 1rem;
+}
+ .mr-1{
+    margin-right: 1rem;
+}
+.second{
+    margin: 5rem auto;
+    width: calc(400px + 3rem);
+    height: calc(400px + 3rem);
+}
+.d-flex{
+    display: flex;
+    
+}
+.flex{
+height: 200px;
+flex: 1 1 200px;
+border-style: dotted;
+}
+.red{
+    padding: 10px;
+    background-color: brown;
+}

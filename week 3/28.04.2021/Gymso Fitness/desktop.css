@@ -1,0 +1,46 @@
+
+/* Desktop */
+@media screen and (min-width: 1024px) {
+    .section h1 {
+        padding: 15vh 0;
+        font-size: 40px;
+    }
+    .black {
+        padding: 17vh 50px;
+    }
+    .section1-intro p {
+        font-size: 25px;
+    }
+    .nav__mobile-icon-on, .nav__mobile-icon-off{
+        display: none;
+    }
+    .nav__content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: initial;
+        transform: none;
+        padding: 0;
+    }
+    .classes{
+        justify-content: center;
+    }
+    .nav:hover .nav__content {
+        display: flex;
+    }
+    .nav:hover .nav__mobile-icon-off {
+        display: none;
+    }
+    .menu{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    li{
+        display: inline-block;
+    }
+    .text{
+        flex: 3;
+    }
+    
+}

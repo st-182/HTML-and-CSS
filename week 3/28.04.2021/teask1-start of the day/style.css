@@ -1,0 +1,112 @@
+*{
+    box-sizing: border-box;
+    transition: 500ms;
+}
+h1{
+    font-size: 20px;
+}
+.none{
+ display: none;
+}
+.visible{
+display: none;
+}
+.dimensions{
+    padding: 20px;
+    background-color: rgb(64, 4, 104);
+    /* margin: 5px; */
+    height: 100px;
+    
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+}
+@media screen and (max-width: 349px){
+    .none{
+        display: block;
+       }
+}
+@media screen and (min-width: 350px){
+    .visible{
+        display: block;
+       }
+}
+@media screen and (min-width: 450px){
+
+    main{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+        /* gap: 5px; */
+    }
+    .dimensions{
+        width: calc(33% - 3px);
+    }
+}
+@media screen and (min-width: 550px){
+    main{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        /* gap: 5px; */
+    }
+    .dimensions{
+        width: calc(100% - 10px);
+    }
+}
+@media screen and (min-width: 769px){
+    main{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+        /* gap: 5px; */
+    }
+    .dimensions{
+        width: calc(50% - 3px);
+    }
+}
+@media screen and (min-width: 900px){
+    main{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        /* gap: 5px; */
+    }
+    .dimensions{
+        width: auto;
+    }
+}
+@media screen and (min-width: 1050px){
+    main{
+        max-width: 1050px;
+        margin: 0 auto;
+    }
+    .dimensions{
+        width: auto;
+    }
+}
+.dimensions-final{
+    display: none;
+}
+@media screen and (min-width: 1200px){
+    main{
+        display: none;
+    }
+    .dimensions-final{
+        height: 200px;
+        display: block;
+        text-align: center;
+    }
+}

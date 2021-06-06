@@ -1,0 +1,377 @@
+:root {
+    --header:#eaf0ff;
+    --aplication:#f2745f;
+    --aplication-border:#f3826f;
+    --grey:#363e50;
+    --border:#eaf0ff;
+    --black:#121212;
+    --font: 'Spectral', serif;
+    --weakly-food-bg:#f2f6ff;
+    --footer:#363e50;
+    --price:rgba(250, 250, 250, 0.9);
+}
+/* all elements */
+*{
+    box-sizing: border-box;
+    text-align: center;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+/* --- GENERAL STYLES --- */
+a{
+    text-decoration: none;
+    text-transform: uppercase;
+}
+h1{
+    font-weight: 100;
+    font-size: 50px;
+}
+.btn{
+    padding: 10px 20px;
+    background: var(--aplication);
+    border-radius: 3px;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+}
+.btn--white{
+    color: var(--aplication);
+    background: white;
+}
+img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+fieldset, input{
+    text-decoration: none;
+    border: none;
+}
+.flex-center_xy{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flex-center_yx{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.flex-center-reverse_xy{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+.flex-between_xy{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.flex-between_yx{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+.flex-evenly_xy{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.flex-evenly_yx{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+.padding{
+    padding:10px;
+}
+.section-padding{
+padding: 3% 10%;
+}
+.margin{
+    margin: 10px;
+}
+.circle{
+    border: 1px solid rgba(102, 102, 102, 0.4);
+    border-radius: 50%;
+}
+/* Header */
+header{
+    background-color: var(--header);
+}
+.victory h1{
+    padding: 20px;
+    margin: 0;
+    font-style: italic;
+    
+}
+.line{
+    width: 85%;
+    height: 1px;
+    background-color: rgba(126, 124, 124, 0.3);
+    margin: 0 auto;
+}
+
+nav a, nav{
+    padding: 30px;
+    color: var(--gray);
+}
+
+/* About (ASIAN RESTAURANT)*/
+
+.about{
+    background: url(https://templatemo.com/templates/templatemo_507_victory/img/banner-bg.jpg) no-repeat;
+    background-size: cover;
+    color: white;
+}
+.text-about{
+    padding: 150px 27%;
+}
+
+.text-about p{
+    margin-bottom: 40px;
+}
+
+/* Contacts and Order (WE COOK DELECIOUS) */
+.cnt-ord__inside{
+    padding: 10% 15%;
+    position: relative;
+    margin: 0 auto;
+}
+.cnt-ord__img{
+    width: 300px;
+    height: 200px;
+}
+.absolute{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.absolute--color{
+    background: var(--aplication);
+    color: white;
+}
+.absolute--padding{
+    padding: 3%;
+}
+.absolute__call--color{
+    background: var(--aplication-border);
+}
+.absolute__call--padding{
+    padding: 10%;
+}
+.absolute__or{
+    width: 30px;
+    height: 30px;
+}
+/* --- SECTION FOOD ---  */
+.food--img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 10px solid var(--border);
+}
+.food h3{
+    padding: 10% 0;
+    font-weight: 400;
+}
+/* --- SECTION BOOK TABLE --- */
+.book{
+    background: url(https://templatemo.com/templates/templatemo_507_victory/img/book-bg.jpg) no-repeat;
+    background-size: cover;
+    color: white;
+}
+.book__table{
+    height: 400px;
+}
+.book__text{
+    padding: 5%;
+    padding-top: 0;
+}
+
+.table__img, .table__table{
+    width: 40%;
+    height: 100%;
+}
+.table__table{
+    background-color: white;
+    padding: 5.9% 3%;
+}
+.table__table h3{
+    color: var(--grey);
+    font-size: 30px;
+    font-weight: 400;
+}
+.select{
+    flex-wrap: wrap;
+}
+.select fieldset, .select input, {
+    padding: 10px;
+}
+
+.select1 select, .select2 select, .select3 input, .select4 input, .select5 select, .select6 a{
+    width: 150px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+select{
+    border: transparent;
+    padding-left: 25%;
+}
+/* section get app  */
+.app--color{
+    background-color: var(--aplication);
+    height: 250px;
+    color: white;
+}
+/* section WEEKLY FEATURED FOOD */
+.featured{
+    height: 600px;
+}
+.week-food{
+    gap: 3%;
+}
+.week-food h3,.week-food h5, .week-food p{
+    text-align: left;
+}
+.featured-food{
+    background: var(--weakly-food-bg);
+    /* width: 33%; */
+    padding: 3%;
+}
+.featured-food .line{
+    width: 100%;
+}
+.featured-food h3{
+    font-size: 30px;
+    font-weight: 400;
+    padding: 10px 0;
+}
+.card{
+    width: 100%;
+    margin-top: 10px;
+}
+.card__img{
+    width: 300px;
+    height: 200px;
+    position: relative;
+    margin: 0 auto;
+}
+.price{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: var(--aplication);
+    background: var(--price);
+    padding: 10px;
+}
+.description{
+    background: white;
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.description h5{
+font-size: 20px;
+padding-bottom: 20px;
+font-weight: 400;
+}
+.description p{
+    color: var(--grey);
+    font-size: 14px;
+}
+
+/* <!-- section BLOG POST  --> */
+.blog{
+    height: 700px;
+    background-color: var(--weakly-food-bg);
+}
+.posts{
+    flex-wrap: wrap;
+    padding: 0 50px;
+}
+.posts h3, {
+    text-align: left;
+}
+.post{
+    width: 600px;
+    margin: 1%;
+    height: 260px;
+}
+.post-card__img{
+    position: relative;
+    margin: 0 auto;
+    height: 100%;
+}
+.post-description, .post-img{
+    width: 50%;
+    height: 100%;
+    background: white;
+}
+.post-description h3,.post-description p, .post-description {
+    text-align: left;
+    margin: 10px 0;
+}
+.post-description h3{
+    font-weight: 400;
+}
+.post-description p{
+    color: var(--grey);
+    font-size: 14px;
+    opacity: 0.5;
+}
+.post-description a{
+    color: var(--aplication);
+}
+.date{
+    top: 0;
+    left: 0;
+    bottom: unset;
+    right: unset;
+}
+/* <!-- section NEWSLETTERS --> */
+.news{
+    background: url(https://templatemo.com/templates/templatemo_507_victory/img/signup-bg.jpg) no-repeat;
+    background-size: cover;
+    color: white;
+    height: 200px;
+    padding: 4%;
+}
+.news__input{
+    margin: 0 auto;
+    width: 50%;
+    gap: 10px;
+}
+.news__input input{
+    height: 33px;
+    border-radius: 3px;
+    opacity: 0.9;
+}
+.news__input input{
+    width: 70%;
+}
+.news__input a{
+    width: 30%;
+    background: transparent;
+    border: 1px solid white;
+}
+/* FOOTER */
+footer{
+    background-color: var(--footer);
+    height: 100px;
+    color: white;
+}
+.ftr-btn{
+    gap: 20px;
+}
+.ftr-text{
+    width: 260px;
+}

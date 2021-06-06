@@ -1,0 +1,150 @@
+//variables
+$logo-color-blue: rgba(7, 64, 219, 0.445);
+$color-blue: rgba(26, 77, 219, 0.445);
+$font: roboto;
+
+//globals
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    background-color: $color-blue;
+}
+.container{
+    margin: 10px;
+    padding: 10px;
+    p{
+        font-family: $font;
+    }
+}
+img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+//extend
+%justify-between{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+%justify-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+//navbar
+.navbar{
+    background: $logo-color-blue;
+    height: 80px;
+    padding: 15px;
+    @extend %justify-between;
+    &__logo{
+        font-size: 30px;
+    }
+    a{
+    color: white;
+    }
+    font-family: raleway;
+}
+.navbar__links{
+    gap: 10px;
+    @extend %justify-between;
+}
+// flex
+.flex{
+    @extend %justify-between;
+    background: #000;
+    color: white;
+    &__item{
+        @extend %justify-center;
+        flex-direction: column;
+        align-items: initial;
+        text-align: center;
+        gap: 5px;
+        button{
+            background-color: $color-blue;
+            border: 1px solid white;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            &:hover{
+                border: 1px solid rgb(255, 6, 6);
+            }
+            &:active{
+                border: 1px solid rgb(0, 0, 0);
+            }
+        }
+        img{
+        background: linear-gradient(to right, red, purple);
+        padding: 3px;
+        margin: 0 auto;
+    }
+    }
+    
+}
+//mixin
+@mixin transform($property) {
+    transform: $property;
+}
+.flex__item.container { 
+    @include transform(rotate(10deg)); 
+}
+@mixin sc($two) {
+    transform: $two;
+}
+.flex__item.container{
+    &:nth-child(2){
+            @include sc(scale(2)); 
+            @include transform(rotate(-5deg));
+    }
+}
+.navbar{
+    @include sc(scale(0.8)); 
+    &__logo{
+        @include sc(scale(0.8)); 
+    }
+}
+@media screen and (max-width:700px){
+    .navbar{
+        @include sc(scale(1)); 
+        &__logo{
+            @include sc(scale(1)); 
+        }
+    }
+    .flex__item.container{
+        &:nth-child(2){
+                @include sc(scale(1.5)); 
+        }
+        &:nth-child(odd){
+            @include sc(scale(0.5)); 
+        }
+    }
+}
+@media screen and (max-width:1000px){
+    .navbar{
+        &__links{
+            @include sc(scale(2)); 
+        }
+        &__logo{
+            @include sc(scale(1.5)); 
+        }
+    }
+    .flex__item.container{
+        &:nth-child(2){
+                @include sc(scale(1.5)); 
+        }
+        &:nth-child(odd){
+            @include sc(scale(0.5)); 
+        }
+    }
+}

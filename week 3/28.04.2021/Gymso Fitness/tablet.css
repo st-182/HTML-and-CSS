@@ -1,0 +1,43 @@
+/* Tablet */
+@media screen and (min-width: 768px) {
+    .section h1 {
+        padding: 40px 0;
+        font-size: 40px;
+    }
+    .mflex-bw-xy section{
+        width: 50%;
+    }
+    .section2-membership-info{
+        padding: 30px 5%;
+    }
+    .section2-membership-info, .section3-working-hours{
+        height: 450px;
+    }
+    .section4-people{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+    }
+    .classes{
+        justify-content: space-between;
+    }
+    .text{
+        flex: 2;
+    }
+    .card{
+        flex: 1;
+    }
+    .table{
+        height: 275px;
+    }
+    table{
+        height: 250px;
+    }
+    .mflex-bw-xy{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+}

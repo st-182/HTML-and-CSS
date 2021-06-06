@@ -1,0 +1,10 @@
+.navbar-brand img{
+    transform: scale(2);
+    border-radius: 20%;
+    margin: 0 10px;
+}
+@media screen and (max-width:500px) {
+    .navbar-brand img{
+        transform: scale(1.5);
+    }
+}

@@ -1,0 +1,91 @@
+*{
+    box-sizing: border-box;
+    color: white;
+    transition: 500ms;
+}
+.grid{
+    display: grid;
+    /* width: 400px; */
+    height: 900px;
+    grid-template-columns:repeat(1, 1fr);
+    grid-template-rows: 3fr 2fr 10fr 8fr 6fr 6fr 6fr;
+    grid-template-areas:
+    "black"
+    "red"
+    "blue"
+    "darkblue"
+    "yellow"
+    "green"
+    "lightblue"
+    ;
+    background-color: dimgray;
+    gap: 3px;
+    padding: 10%;
+    /* margin: 50vh auto; */
+    /* transform: translate(0,-50%); */
+}
+
+.item{
+    display: grid;
+    align-content: center;
+    text-align: center;
+}
+.item1{
+    grid-area: black;
+    background-color: black;
+}
+.item2{
+    grid-area: red;
+    background-color: red;
+}
+.item3{
+    background-color: darkblue;
+    grid-area: darkblue; 
+}
+.item4{
+    background-color: blue;
+    grid-area: blue;
+}
+.item5{
+    background-color: yellow;
+    grid-area: yellow;
+}
+.item6{
+    background-color: green;
+    grid-area: green;
+}
+.item7{
+    background-color: lightblue;
+    grid-area: lightblue; 
+}
+
+@media screen and (min-width:768px){
+    .grid{
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: 3fr 2fr 10fr 8fr 6fr 6fr ;
+        grid-template-areas:
+            "black black black"
+            "blue blue blue"
+            "blue blue blue"
+            "red darkblue darkblue"
+            "red yellow yellow"
+            "red green lightblue"
+        ;
+    }
+    
+}
+@media screen and (min-width:991px){
+    .grid{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        /* grid-template-rows: 3fr 2fr 10fr 8fr 6fr 6fr ; */
+        grid-template-areas:
+            "black red red red"
+            "blue blue blue blue"
+            "blue blue blue blue"
+            "darkblue darkblue . lightblue"
+            "darkblue darkblue . green"
+            "yellow yellow yellow yellow"
+        ;
+    }
+    
+}

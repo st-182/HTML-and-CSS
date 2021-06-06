@@ -1,0 +1,249 @@
+/* Hoverable Dropdown */
+
+.nav {
+    display: inline-block;
+}
+.nav__content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    
+}
+.nav__mobile-icon-off{
+    display: none;
+    padding: 30px 0px 30px 100px;
+}
+.nav__mobile-icon-on,.nav__mobile-icon-off{
+    color: white;
+}
+.nav:hover .nav__mobile-icon-on{
+    display: none;
+}
+.nav:hover .nav__mobile-icon-off{
+    display: block;
+}
+.nav:hover .nav__content {
+    display: block;
+}
+.menu{
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+}
+.menu__name:hover{
+    transform: scale(1.2);
+}
+/* <!-- section 1 --> */
+.section1-intro{
+    background: url(http://445.media/wp-content/uploads/2017/11/mobile-first.png) no-repeat center;
+    background-size: cover;
+    
+}
+.black{
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 50px;
+}
+.btn{
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin: 5px;
+}
+.btn-1{
+    border: none;
+}
+.btn:hover{
+    padding: 15px;
+    border: 1px solid var(--red);
+    border-radius: 3px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+/* <!-- section 2 --> */
+.section2-membership-info, .section3-working-hours, .section6-table{
+    background: rgba(0, 0, 0, 0.9);
+}
+.section h1,.section h2{
+    padding: 30px 0;
+}
+.section h3,.section p{
+    padding: 20px 0;
+}
+.section h4,.section h5{
+    padding: 10px 0;
+}
+.section2-membership-info p{
+    padding: 0 10px 40px;
+}
+.section a{
+    margin-top: 10px;
+}
+.nav__content, .section1-intro, .section2-membership-info, .section3-working-hours,.section4-people h2,.section5-training-programs, .subject__text2,.section6-table,td,th,th i,footer{
+    text-align: center;
+}
+section:not(:first-child) .section{
+    padding: 30px 5%;
+}
+/* <!-- section 3 --> */
+.section3-working-hours h5{
+    font-size:18px
+}
+.section3-working-hours{
+    text-align: left;
+}
+.section3-working-hours{
+    padding-left: 10px;
+}
+/* div.section.section3-working-hours{
+    padding-left: 10px;
+} */
+
+/* <!-- section 4 --> */
+.black-text{
+    color: black;
+}
+.card{
+    /* width: 100%; */
+    background-color: white;
+    /* padding: 5%; */
+    margin: 5px 0;
+    height: auto;
+}
+.card__photo img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: top;
+}
+.card__half{
+    width: 50%;
+}
+.card__half h3,.card__half  p{
+    padding: 10px;
+}
+.card__half div{
+    padding: 10px;
+    text-align: right;
+}
+.card__half p,.card__half i{
+    color: gray;
+}
+.card__half i{
+    cursor: pointer;
+}
+/* <!-- section 5 --> */
+.section5-training-programs{
+    background-color: rgb(235, 235, 235);
+}
+.section5-training-programs h2{
+    color: black;
+}
+.classes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px 0;
+}
+.subject{
+    padding: 10px;
+    margin: 5px;
+    background-color: white;
+    max-width: 370px;
+}
+.subject__text *{
+    color: black;
+}
+.subject__round{
+    border-radius: 60% 90%;
+    background:linear-gradient(red, blue);
+    padding: 20px;
+}
+.subject__round p{
+    color: white;
+}
+
+/* <!-- section 6 --> */
+.section6-table{
+    overflow: hidden;
+}
+.table{
+    overflow: scroll;
+    width: 100%;
+    height: 150px;
+}
+table{
+    width: 1200px;
+    height: 150px;
+    margin: 0 auto;
+}
+td,th, th i{
+    width: 150px;
+    height: 30px;
+    color: red;
+}
+td{
+    border-radius: 10px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.5);
+    border-top: 1px solid rgba(128, 128, 128, 0.5);
+}
+.table::-webkit-scrollbar {
+    width: 0;
+}
+
+  /* <!-- section 7 --> */
+.section7-form{
+    padding: 10%;
+}
+.section7-form *{
+    color: black;
+}
+.form{
+    width: 100%;
+}
+input, textarea{
+    background: transparent;
+    border:1px solid rgba(128, 128, 128, 0.5);
+    padding: 10px;
+    margin: 5px 0;
+    width: 100%;
+}
+input.btn{
+    color: gray;
+}
+input.btn:hover{
+    color: white;
+}
+
+  /* <!-- section 7 --> */
+.section8-map{
+    background-color: white;
+}
+.section8-map *{
+    color: black;
+}
+.section8-map iframe{
+    padding: 10px;
+}
+  /* <!-- footer --> */
+footer{
+    border-top: 1px solid rgba(128, 128, 128, 0.5);
+    background-color: white;
+}
+footer *{
+    color: var(--footer-text-color);
+    padding: 10px;
+}
+.card__text{
+    height: 150px;
+}

@@ -1,0 +1,189 @@
+/* |/////////////////-------------------\\\\\\\\\\\\\\\\\\\| */
+    /* \\\\\\\\\\\----------VAR---------//////////// */
+/* |/////////////////-------------------\\\\\\\\\\\\\\\\\\\| */
+:root{
+    --lightblue:rgb(116, 211, 255);
+    --darkblue:rgb(29, 29, 90);
+    --blue:rgb(17, 17, 187);
+    --white-blue:rgb(96, 96, 124);
+    --silver:rgb(196, 196, 196);
+    --footer-black:rgb(59, 59, 59);
+}
+/* |/////////////////-------------------\\\\\\\\\\\\\\\\\\\| */
+    /* \\\\\\\\\\\----------ALL ELEMENTS---------//////////// */
+/* |/////////////////-------------------\\\\\\\\\\\\\\\\\\\| */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    transition: 500ms;
+}
+.background{
+    background-image: linear-gradient(var(--blue) 12%,var(--lightblue) 10%,var(--lightblue) 20%,var(--blue) 20%, var(--blue) 50%,var(--lightblue) 50%,var(--blue) 50%, var(--blue) 65.66%);
+}
+img{
+    width: 100%;
+    object-fit: cover;
+    padding: 10px;
+    align-self: center;
+}
+a{
+    color: white;
+}
+/* |/////////////////-------------------\\\\\\\\\\\\\\\\\\\| */
+    /* \\\\\\\\\\\----------HEADER---------//////////// */
+/* |/////////////////-------------------\\\\\\\\\\\\\\\\\\\| */
+
+.header__mobile{
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3% ;
+    /* grid-template-rows: 100px; */
+}
+.column{
+    display: grid;
+    align-content: center;
+    text-align: center;
+}
+.img{
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    
+}
+.column1 img{
+    border-radius: 50%;
+    transform: scale(0.7);
+    height: 100%;
+}
+.column3{
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+}
+/* |/////////////////-------------------\\\\\\\\\\\\\\\\\\\| */
+    /* \\\\\\\\\\\----------MAIN---------//////////// */
+/* |/////////////////-------------------\\\\\\\\\\\\\\\\\\\| */
+
+h1{
+    color: var(--darkblue);
+}
+.big-block{
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+.medium-block1{
+    display: grid;
+    background-color: var(--darkblue);
+}
+.medium-block1 img{
+    opacity: 0.7;
+}
+.medium-block2{
+    display: grid;
+    grid-template-columns: 1fr;
+    
+}
+.small-block{
+    padding: 20px;
+    text-align: center;
+}
+.small-block1{
+    background-color: var(--lightblue);
+}
+.small-block1 *{
+    margin: 30px 0;
+}
+.small-block2{
+    background-color: white;
+    display: grid;
+}
+.small-block3{
+    background-color: white;
+    display: grid;
+}
+.small-block4{
+    background-color: var(--white-blue);
+    display: grid;
+}
+.small-block4 p{
+    padding: 30px 0;
+    align-self: center;
+}
+.btn{
+    padding: 10px;
+    background-color: white;
+    color: var(--darkblue);
+    font-weight: 900;
+    border-radius: 3px;
+}
+/* |/////////////////-------------------\\\\\\\\\\\\\\\\\\\| */
+    /* \\\\\\\\\\\----------FOOTER---------//////////// */
+/* |/////////////////-------------------\\\\\\\\\\\\\\\\\\\| */
+footer{
+    background-color: var(--footer-black);
+    text-align: center;
+    padding: 10px;
+    color: var(--silver);
+}
+
+footer a{
+    text-decoration: underline;
+}
+footer p{
+    padding: 30px 10px;
+}
+
+/* |/////////////////-------------------\\\\\\\\\\\\\\\\\\\| */
+    /* \\\\\\\\\\\----------TABLET---------//////////// */
+/* |/////////////////-------------------\\\\\\\\\\\\\\\\\\\| */
+@media screen and (min-width:768px) {
+    .medium-block2{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .column1 img{
+        transform: scale(0.8);
+    }
+    .header__mobile{
+        grid-template-columns: 30% 60% 10% ;
+        width: 80%;
+        margin: 0 auto;
+    }
+    .column1{
+        align-self: left;
+        justify-self: left;
+    }
+    .column2{
+        justify-self: right;
+        align-self: right;
+        padding-right: 20px;
+        /* transform: scale(2); */
+    }
+    .column3{
+        /* justify-self: center; */
+        align-self: right;
+        
+    }
+    .background{
+        background-image: linear-gradient(var(--blue) 20%,var(--lightblue) 20%,var(--lightblue) 40%,var(--blue) 40%, var(--blue) 50%,var(--lightblue) 50%,var(--blue) 50%, var(--blue) 65.66%);
+    }
+}
+
+/* |/////////////////-------------------\\\\\\\\\\\\\\\\\\\| */
+    /* \\\\\\\\\\\----------DESKTOP---------//////////// */
+/* |/////////////////-------------------\\\\\\\\\\\\\\\\\\\| */@media screen and (min-width:1200px) {
+    .big-block{
+        grid-template-columns: 1fr 1fr;
+    }
+    .column1 img{
+        transform: scale(0.9);
+    }
+    .background{
+        background-image: linear-gradient(var(--blue) 40%,var(--lightblue) 40%,var(--lightblue) 60%,var(--blue) 60%, var(--blue) 60%,var(--lightblue) 60%,var(--blue) 50%, var(--blue) 65.66%);
+    }
+}
